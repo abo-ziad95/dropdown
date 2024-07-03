@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   parserOptions: {
@@ -52,17 +53,12 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-dupe-class-members': 'error',
     'no-duplicate-imports': 'error',
-    'import/no-mutable-exports': 'error',
-    'import/prefer-default-export': 'warn',
-    'import/first': 'error',
-    'import/no-webpack-loader-syntax': 'error',
     'generator-star-spacing': [
       'error', {
         before: false, after: true,
         anonymous: 'after', method: { before: true, after: true },
       }],
     'dot-notation': ['error', { allowKeywords: true }],
-    'no-undef': 'error',
     'one-var': ['error', 'never'],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     eqeqeq: ['error', 'always', { null: 'ignore' }],

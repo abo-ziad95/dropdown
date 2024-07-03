@@ -1,0 +1,47 @@
+.custom-select {
+    width: 200px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.selected-option {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.options-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option:hover, .option.active {
+    background-color: #e0e0e0;
+}
+
+/* macOS style scrollbar */
+.options-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.options-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 6px;
+}
+
+.options-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

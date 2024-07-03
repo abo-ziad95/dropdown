@@ -42,8 +42,8 @@ const CustomSelect = ({ onChange }) => {
     setIsOpen(false);
   };
 
-  const handleKeyDown = (e) => {
-    switch (e.key) {
+  const handleKeyDown = (event) => {
+    switch (event.key) {
       case keyEvent.ARROW_DOWN:
         setActiveIndex((prevIndex) => Math.min(prevIndex + 1, options.length - 1));
         break;

@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
+    jest: true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   parserOptions: {
@@ -14,6 +15,7 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks'],
   rules: {
+    'react/prop-types': 0,
     'prefer-const': ['error',
       {
         destructuring: 'any',

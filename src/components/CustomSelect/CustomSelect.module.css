@@ -1,17 +1,18 @@
-.custom-select {
+.customSelect {
     width: 200px;
     position: relative;
     font-family: Arial, sans-serif;
 }
 
-.selected-option {
+.selectedOption {
     background-color: #f0f0f0;
     padding: 10px;
     cursor: pointer;
     border: 1px solid #ccc;
+    user-select: none;
 }
 
-.options-container {
+.optionsContainer {
     position: absolute;
     top: 100%;
     left: 0;
@@ -21,27 +22,29 @@
     background-color: white;
     border: 1px solid #ccc;
     z-index: 1;
+    user-select: none;
 }
 
-.option {
+.loader {
     padding: 10px;
     cursor: pointer;
+    user-select: none;
 }
 
-.option:hover, .option.active {
+.active {
     background-color: #e0e0e0;
 }
 
 /* macOS style scrollbar */
-.options-container::-webkit-scrollbar {
+.optionsContainer::-webkit-scrollbar {
     width: 12px;
 }
 
-.options-container::-webkit-scrollbar-thumb {
+.optionsContainer::-webkit-scrollbar-thumb {
     background: #c1c1c1;
     border-radius: 6px;
 }
 
-.options-container::-webkit-scrollbar-thumb:hover {
+.optionsContainer::-webkit-scrollbar-thumb:hover {
     background: #a8a8a8;
 }
